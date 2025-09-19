@@ -21,11 +21,11 @@
 | Term | Definition and Description | Base Structure | Real Life Example | App Example |
 
 |------|----------------------------|----------------|-------------------|-------------|
-|  main()  | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |  | starts app |
-|  MaterialApp | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
-|  Scaffold | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  |  |
-|  Collums | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
-|  Rows  | A widget that shows things side-by-side. | `Row(...)` |  |  |
+| main()  | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |  | in main.dart, void main() => runApp(MyPortfolioApp()); |
+| MaterialApp | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  | return MaterialApp( debugShowCheckedModeBanner: false, title: 'TSA Portfolio', theme: ThemeData( , and more |
+| Scaffold | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  | in home.dart return Scaffold(, body: Padding( |
+| Collums | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  | child: Column(, mainAxisAlignment:, MainAxisAlignment.center, children: [ |
+| Rows  | A widget that shows things side-by-side. | `Row(...)` |  |  |
 |  Container  | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  |
 |  Text  | A widget to display text on the screen. | `Text('Hello')` |  |  |
 |  Image.network  | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |  |
@@ -52,14 +52,14 @@
 
 |------|------------|--------------------------|-------------------|-------------|
 
-|  Variable  | A named container used to store a value that may change. | `var x = 5;` | Score | Followers |
-|  Constant  | A fixed value that cannot change once set. | `const PI = 3.14;` |  |  |
-|  Data Type  | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` | Wearing a 3XL when your a S |  |
-|  String  | A sequence of characters used to represent words or text. | `"Hello World"` |  |  |
-|  Integer  | Whole number values. | `int age = 16;` |  |  |
-|  Double  | Number values with decimals. | `double age = 16.2;` |  |  |
+|  Variable  | A named container used to store a value that may change. | `var x = 5;` | Score | main.dart title: 'TSA Portfolio', |
+|  Constant  | A fixed value that cannot change once set. | `const PI = 3.14;` |  | main.dart, const MyPortfolioApp({super.key}); |
+|  Data Type  | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` | Wearing a 3XL when your a S | main.dart, bool, debugShowCheckedModeBanner: false, |
+|  String  | A sequence of characters used to represent words or text. | `"Hello World"` |  | 'HI EVERYONE,\nWelcome to the',
+|  Integer  | Whole number values. | `int age = 16;` |  | fontSize: 28, |
+|  Double  | Number values with decimals. | `double age = 16.2;` |  | padding: EdgeInsets.all(8.0), |
 |  Boolean  | A value that can be true or false. | `bool isLoggedIn = false;` |  |  |
-|  List  | A collection of values in a specific order. | `List<String> names = [];` |  |  |
+|  List  | A collection of values in a specific order. | `List<String> names = [];` |  | final List<String> puppyUrls = [ |
 |  Null  | A special value that means “nothing.” | `String? name = null;` |  |  |
 |  Function  | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` | Clicking a next button to go to the next page |  |
 |  Parameter  | The information passed into a function to change how it works. | `greet(String name)` |  |  |
